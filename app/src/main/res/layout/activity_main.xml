@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_lapangan"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btnShow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showToast"
+        android:padding="0dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#373737"
+        android:text="Toast Team A"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btnCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="countUp"
+        android:padding="0dp"
+        android:layout_weight="1"
+        android:backgroundTint="#5C5C5C"
+        android:text="Count Up"/>
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clearA"
+            android:padding="0dp"
+            android:layout_weight="1"
+            android:backgroundTint="#7A7A7A"
+            android:text="Clear"/>
+
+
+        <Button
+            android:id="@+id/btnCountDown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="countDown"
+            android:padding="0dp"
+            android:layout_weight="1"
+            android:backgroundTint="#5C5C5C"
+            android:text="COUNT DOWN"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/showText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:onClick="countUp"
+        android:textSize="170sp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/showText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:onClick="countUpB"
+        android:textSize="170sp"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCountB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="countUpB"
+            android:layout_weight="1"
+            android:backgroundTint="#5C5C5C"
+            android:text="Count Up"/>
+
+        <Button
+            android:id="@+id/btnClear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clearB"
+            android:padding="0dp"
+            android:layout_weight="1"
+            android:backgroundTint="#7A7A7A"
+            android:text="Clear"/>
+
+        <Button
+            android:id="@+id/btnCountDownB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="countDownB"
+            android:padding="0dp"
+            android:layout_weight="1"
+            android:backgroundTint="#5C5C5C"
+            android:text="COUNT DOWN"/>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnShowB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showToastB"
+        android:backgroundTint="#373737"
+        android:text="Toast Team B"/>
+
+
+
+</LinearLayout>
